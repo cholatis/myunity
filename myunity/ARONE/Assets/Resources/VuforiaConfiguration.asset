@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: ATF5pWz/////AAABmQy+IJ+A+ExErDibzeElp+FvtQPxeJdONzgwcbScGFYmma6+aoRfjKS4RjMLx3r1r38okVY7a8xl8HV4bQy/PgWPoLtrN4yHocIi9DIKhUpTCTLZzKU++AN0WgIOGH9SWk5BmD3n4ig+mDtDoddDx6qpEC+Z3E7tdahxTMNUst2h7mzWriL9QMiYBKak3Fvq6VeamMMD2GqJakx9CrS+RymLndvD3CRM48ZowsIW3rCEPDIlgJ1lGbakbGiUT9SXnX/VyTV2W1rLWoashTapAKofHH+NhTcBQBr5Bb7PTMpBasVao4GLuHz40fVtGh5T0ccZwwubnkKsx2lPIKwv++oD46p+q/l4e9+na43Kw84H
-    ufoLicenseKey: QWY3c1p4bi8vLy8vQUFBQUtKcXpna0ZGWGtidmpPYTlmTDhUbUI1L2FpYWh0eUVlUE12THF3Qk8yTEUvOWFGYlB6dVVQdm5lUlpWMDdDVWUrdE9NT2pCQkNEdXpCT1JmM1BOMlg4aXBxb3BqL1gyT1FPQWFLOUhEQ0c5Z1F0WjBKL2FXN2xlanhrOWZXaGdJakFndWd3bDdBNTJPUEJudjFVbjl5b3NsQlRUUi9yTmUrNHdpZ0ZZRlJGdm5XVUZqUHgrUjdRTFl6a1R3K2toUlZtQkp6eXdBQWE5R2R1UThxbWFxMHk3WXdBUjN5bjl6VXNySlBhcWcyR1liZVRoSzdxY2JtSTM0RnRXTzhIWlJVZHpSRG15OVhRTitYc2xQTXNYaVlMRThWS09zZlJCRkx0VnpsU2YrakVlc21NUm53bnF6VVZwUFdFeWgyOWxFSjZTdGs5YUFCbkR3L0EyWEZ5QzRPTzBCczJoSHJUdXdESXR3Yysyam5GeG4=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVNZV0cxWC8vLy8vQUFBQUtPN000M3ZYblVhd3IvODYwL2xRQ1dnT0xYN3ZWTUE0VDRqbnd4aUtvTG5TeWgydS83Q3pMaExYQkNkTUZ4cXBtTVluRWo5Y0xqaWtnNEQvc2lBUkZOSngxbUdmQlA2cVNId055ZWVGd0loRkFtS3JkVmlYbkFOUExwR3c3M0tmaWtxRnQxZmkrajJPanVPNmZQMUJLUjRGNHFvM3BDc0FvMi95Y3lwaDZhYVFkOVlISFN5TmI2WExqS0VLcXU3RmU1b1Z3NFVrUTdQTWV3YXBTRndPS3NteTYrekRXOWM5MmxCbkh2WTdvWVlUdmpSRWd1emEvSG14MkZacHFTVWlVNFhablZzSUluM0UrTkoxS2RSd0F6ejdMS29OMk5yTFBQNzF0OFhlS0tJN1d0UmpIQmZGZk5LVEp0VHM4T1c0OWJOVzVSQStMZ3kzeVREcHVlWjRHMDliQVQ2d29Nc29vMmtsL1l4eit3OHY=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 4
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
@@ -45,19 +45,19 @@ MonoBehaviour:
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
   database:
-    disableModelExtraction: 0
+    disableModelExtraction: 1
   videoBackground:
     clippingMode: 0
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
       type: 3}
-    matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
+    matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
-    arcoreRequirement: 0
-    trackingMode: 1
+    arcoreRequirement: 1
+    trackingMode: 0
     posePrediction: 0
     modelCorrectionMode: 0
     modelTransformEnabled: 0
@@ -66,6 +66,6 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: USB Camera
     turnOffWebCam: 0
     renderTextureLayer: 30

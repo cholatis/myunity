@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/DataFile/Scenes/ARONEScene.unity
+- path: Assets/SamplesResources/Scenes/3-CloudReco.unity
   isLoaded: 1
   isActive: 1
